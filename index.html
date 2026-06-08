@@ -1,0 +1,513 @@
+[8/06/2026 5:41 p. m.] Leon👑: <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnvíaCol - Paquetería Nacional Colombia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    details summary { list-style: none; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary::after { content: " ▲"; }
+    details summary::after { content: " ▼"; float: right; }
+  </style>
+</head>
+<body class="bg-white min-h-screen">
+
+  <!-- HEADER -->
+  <header class="bg-yellow-500 text-gray-900 sticky top-0 z-50 shadow-lg">
+    <nav class="max-w-7xl mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <svg class="w-8 h-8 text-red-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          <span class="font-bold text-xl text-red-700">EnvíaCol</span>
+        </div>
+        <ul class="hidden md:flex gap-6 items-center font-medium">
+          <li><a href="#inicio" class="hover:text-red-700 transition">Inicio</a></li>
+          <li><a href="#servicios" class="hover:text-red-700 transition">Servicios</a></li>
+          <li><a href="#rastreo" class="hover:text-red-700 transition">Rastreo</a></li>
+          <li><a href="#cobertura" class="hover:text-red-700 transition">Cobertura</a></li>
+          <li><a href="#precios" class="hover:text-red-700 transition">Tarifas</a></li>
+          <li><a href="#contacto" class="bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-red-800 transition">Contacto</a></li>
+        </ul>
+        <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <ul id="mobile-menu" class="hidden md:hidden mt-4 space-y-3 pb-4 font-medium">
+        <li><a href="#inicio" class="block hover:text-red-700">Inicio</a></li>
+        <li><a href="#servicios" class="block hover:text-red-700">Servicios</a></li>
+        <li><a href="#rastreo" class="block hover:text-red-700">Rastreo</a></li>
+        <li><a href="#cobertura" class="block hover:text-red-700">Cobertura</a></li>
+        <li><a href="#precios" class="block hover:text-red-700">Tarifas</a></li>
+        <li><a href="#contacto" class="block bg-red-700 text-white px-4 py-2 rounded-lg text-center">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="bg-gradient-to-br from-red-700 via-red-600 to-yellow-500 text-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="inline-block bg-white/20 px-4 py-1 rounded-full text-sm mb-4">🇨🇴 Empresa 100% Colombiana</div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Envíos Rápidos y Seguros<br>por Toda Colombia</h1>
+      <p class="text-lg md:text-xl mb-8 text-yellow-100 max-w-2xl mx-auto">
+        Conectamos tu negocio con todo el territorio nacional. Envíos express, paquetería terrestre y soluciones logísticas desde Bogotá hasta La Guajira.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#rastreo" class="bg-white text-red-700 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-50 transition">Rastrear Paquete</a>
+        <a href="#contacto" class="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition border-2 border-white">Solicitar Cotización</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div><div class="text-3xl font-bold text-yellow-400 mb-1">+500K</div><div class="text-sm
+[8/06/2026 5:41 p. m.] Leon👑: text-gray-400">Envíos al año</div></div>
+      <div><div class="text-3xl font-bold text-yellow-400 mb-1">32</div><div class="text-sm text-gray-400">Departamentos</div></div>
+      <div><div class="text-3xl font-bold text-yellow-400 mb-1">1.100+</div><div class="text-sm text-gray-400">Municipios cubiertos</div></div>
+      <div><div class="text-3xl font-bold text-yellow-400 mb-1">98%</div><div class="text-sm text-gray-400">Satisfacción</div></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-yellow-500">
+        <svg class="w-12 h-12 text-red-700 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <h3 class="font-semibold mb-2">Entrega Express</h3>
+        <p class="text-sm text-gray-600">24-48 horas en ciudades principales</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-yellow-500">
+        <svg class="w-12 h-12 text-red-700 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <h3 class="font-semibold mb-2">100% Seguro</h3>
+        <p class="text-sm text-gray-600">Seguro incluido en todos los envíos</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-yellow-500">
+        <svg class="w-12 h-12 text-red-700 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <h3 class="font-semibold mb-2">Cobertura Nacional</h3>
+        <p class="text-sm text-gray-600">Los 32 departamentos de Colombia</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-yellow-500">
+        <svg class="w-12 h-12 text-red-700 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <h3 class="font-semibold mb-2">Rastreo en Tiempo Real</h3>
+        <p class="text-sm text-gray-600">Monitorea tu paquete 24/7</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Servicios</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Soluciones de paquetería adaptadas a las necesidades de todos los colombianos</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="border-2 rounded-lg p-6 hover:shadow-lg hover:border-yellow-500 transition">
+          <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-red-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Paquetería Express</h3>
+          <p class="text-gray-600 mb-4">Entrega urgente en 24-48 horas en Bogotá, Medellín, Cali, Barranquilla y demás ciudades principales.</p>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Recolección a domicilio</li>
+            <li class="flex items-center gap-2"><svg
+[8/06/2026 5:41 p. m.] Leon👑: class="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Entrega en fin de semana</li>
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Notificación WhatsApp/Email</li>
+          </ul>
+        </div>
+        <div class="border-2 rounded-lg p-6 hover:shadow-lg hover:border-yellow-500 transition">
+          <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Paquetería Terrestre</h3>
+          <p class="text-gray-600 mb-4">Envíos económicos con entrega en 3-7 días hábiles. Ideal para volúmenes y paquetes grandes a nivel nacional.</p>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Hasta 70 kg por paquete</li>
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Tarifas preferenciales</li>
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Rastreo en línea</li>
+          </ul>
+        </div>
+        <div class="border-2 rounded-lg p-6 hover:shadow-lg hover:border-yellow-500 transition">
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Soluciones Empresariales</h3>
+          <p class="text-gray-600 mb-4">Servicios personalizados para empresas y e-commerce con alto volumen. Tarifas especiales en pesos colombianos.</p>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Cuenta empresarial</li>
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Ejecutivo dedicado</li>
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Facturación mensual con NIT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RASTREO -->
+  <section id="rastreo" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl
+[8/06/2026 5:41 p. m.] Leon👑: mx-auto">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Rastrea tu Paquete</h2>
+          <p class="text-gray-600">Ingresa tu número de guía para conocer el estado de tu envío en Colombia</p>
+        </div>
+        <form onsubmit="rastrear(event)" class="bg-white p-6 md:p-8 rounded-lg shadow-lg border-t-4 border-yellow-500">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input type="text" id="guia" placeholder="Número de guía (ej: COL1234567890)" required
+              class="flex-1 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600" />
+            <button type="submit" class="bg-red-700 text-white px-8 py-3 rounded-lg hover:bg-red-800 transition font-semibold">Rastrear</button>
+          </div>
+        </form>
+        <div class="mt-8 bg-white p-6 rounded-lg border">
+          <h3 class="font-semibold mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-red-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Estados del envío
+          </h3>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-start gap-3"><div class="w-2 h-2 bg-red-600 rounded-full mt-1.5 flex-shrink-0"></div><div><strong>En tránsito:</strong> Tu paquete está en camino</div></div>
+            <div class="flex items-start gap-3"><div class="w-2 h-2 bg-yellow-500 rounded-full mt-1.5 flex-shrink-0"></div><div><strong>En centro de distribución:</strong> Procesándose para entrega</div></div>
+            <div class="flex items-start gap-3"><div class="w-2 h-2 bg-green-600 rounded-full mt-1.5 flex-shrink-0"></div><div><strong>Entregado:</strong> Paquete recibido exitosamente</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COBERTURA -->
+  <section id="cobertura" class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Cobertura Nacional</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Llegamos a los 32 departamentos de la República de Colombia</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Amazonas</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Antioquia</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Arauca</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Atlántico</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Bolívar</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Boyacá</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Caldas</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Caquetá</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Casanare</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Cauca</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Cesar</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm
+[8/06/2026 5:41 p. m.] Leon👑: hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Chocó</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Córdoba</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Cundinamarca</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Guainía</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Guaviare</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Huila</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">La Guajira</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Magdalena</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Meta</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Nariño</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">N. de Santander</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Putumayo</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Quindío</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Risaralda</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">San Andrés</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Santander</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Sucre</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Tolima</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Valle del Cauca</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Vaupés</div>
+        <div class="bg-gray-50 p-3 rounded-lg text-center text-sm hover:bg-yellow-50 hover:text-red-700 transition cursor-pointer border">Vichada</div>
+      </div>
+      <div class="mt-12 bg-red-50 border border-red-200 p-6 md:p-8 rounded-lg max-w-3xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-4">
+        <svg class="w-12 h-12 text-red-700 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        <div>
+          <h3 class="font-semibold mb-2">Ciudades con Entrega Express</h3>
+          <p class="text-gray-700">Bogotá, Medellín, Cali, Barranquilla, Cartagena, Cúcuta, Bucaramanga, Pereira, Santa Marta, Ibagué, Manizales y Armenia cuentan con cobertura express en 24-48 horas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section id="precios" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Tarifas
+[8/06/2026 5:41 p. m.] Leon👑: y Precios</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Precios en pesos colombianos (COP), accesibles para todos</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto items-start">
+        <!-- Básico -->
+        <div class="bg-white p-8 rounded-lg border-2 hover:border-yellow-500 transition">
+          <div class="text-center mb-6">
+            <h3 class="text-xl font-semibold mb-2">Básico</h3>
+            <div class="text-3xl font-bold mb-1">$12.900</div>
+            <p class="text-sm text-gray-600">COP por kg / terrestre</p>
+          </div>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Entrega en 5-7 días hábiles</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Rastreo en línea</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Hasta 30 kg</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Seguro básico incluido</span></li>
+          </ul>
+          <a href="#contacto" class="block w-full bg-gray-200 text-gray-800 py-3 rounded-lg hover:bg-gray-300 transition text-center font-medium">Contratar</a>
+        </div>
+        <!-- Express -->
+        <div class="bg-white p-8 rounded-lg border-2 border-red-700 relative shadow-xl md:scale-105">
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-700 text-white px-4 py-1 rounded-full text-sm whitespace-nowrap">Más Popular</div>
+          <div class="text-center mb-6">
+            <h3 class="text-xl font-semibold mb-2">Express</h3>
+            <div class="text-3xl font-bold mb-1">$24.900</div>
+            <p class="text-sm text-gray-600">COP por kg / express</p>
+          </div>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Entrega en 24-48 horas</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Rastreo en tiempo real</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Hasta 50 kg</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Seguro completo incluido</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600
+[8/06/2026 5:41 p. m.] Leon👑: flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Recolección gratis</span></li>
+          </ul>
+          <a href="#contacto" class="block w-full bg-red-700 text-white py-3 rounded-lg hover:bg-red-800 transition text-center font-medium">Contratar</a>
+        </div>
+        <!-- Empresarial -->
+        <div class="bg-white p-8 rounded-lg border-2 hover:border-yellow-500 transition">
+          <div class="text-center mb-6">
+            <h3 class="text-xl font-semibold mb-2">Empresarial</h3>
+            <div class="flex justify-center mb-2">
+              <svg class="w-10 h-10 text-red-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="14" y2="14"/></svg>
+            </div>
+            <p class="text-sm text-gray-600">Cotización personalizada</p>
+          </div>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Tarifas preferenciales</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Ejecutivo dedicado</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Sin límite de peso</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">Factura con NIT</span></li>
+            <li class="flex items-start gap-2"><svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="text-sm">API de integración</span></li>
+          </ul>
+          <a href="#contacto" class="block w-full bg-gray-200 text-gray-800 py-3 rounded-lg hover:bg-gray-300 transition text-center font-medium">Solicitar Cotización</a>
+        </div>
+      </div>
+      <p class="mt-8 text-center text-sm text-gray-600">* Precios en pesos colombianos (COP). Sujetos a cambio según origen, destino y peso volumétrico.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Lo Que Dicen Nuestros Clientes</h2>
+        <p class="text-gray-600">Miles de colombianos satisfechos en todo el país</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-md border-b-4 border-yellow-500">
+          <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+          <p class="text-gray-700 mb-4">"¡Excelente servicio! Mis paquetes siempre llegan a tiempo desde Bogotá a Medellín. El rastreo en línea es muy preciso. ¡Los mejores del país!"</p>
+          <div class="font-semibold">Valentina Ospina</div>
+          <div class="text-sm text-gray-600">Dueña de tienda en línea — Bogotá</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md
+[8/06/2026 5:41 p. m.] Leon👑: border-b-4 border-red-700">
+          <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+          <p class="text-gray-700 mb-4">"Enviamos más de 300 paquetes al mes para nuestro negocio en Medellín. Las tarifas empresariales y la atención son insuperables en Colombia."</p>
+          <div class="font-semibold">Carlos Restrepo</div>
+          <div class="text-sm text-gray-600">Gerente Logística — Medellín</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md border-b-4 border-yellow-500">
+          <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+          <p class="text-gray-700 mb-4">"La atención al cliente es fantástica. Resolvieron todo rápidamente. Llevan mis productos desde Cali hasta La Guajira sin problema."</p>
+          <div class="font-semibold">Luisa Caicedo</div>
+          <div class="text-sm text-gray-600">Emprendedora — Cali</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Contáctanos</h2>
+        <p class="text-gray-600">Estamos aquí para ayudarte con tus envíos en Colombia</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div>
+          <h3 class="text-xl font-semibold mb-6">Información de Contacto</h3>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="bg-red-100 p-3 rounded-lg flex-shrink-0">
+                <svg class="w-6 h-6 text-red-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold mb-1">Teléfono</div>
+                <p class="text-gray-700">01 8000 123 456 (Línea gratuita)</p>
+                <p class="text-gray-700">(601) 234 5678 — Bogotá</p>
+                <p class="text-sm text-gray-600">Lunes a Viernes: 7:00 AM - 7:00 PM</p>
+                <p class="text-sm text-gray-600">Sábados: 8:00 AM - 1:00 PM</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-red-100 p-3 rounded-lg flex-shrink-0">
+                <svg class="w-6 h-6 text-red-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold mb-1">Email</div>
+                <p class="text-gray-700">contacto@enviacol.com.co</p>
+                <p class="text-gray-700">atencion@enviacol.com.co</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-red-100 p-3 rounded-lg flex-shrink-0">
+                <svg class="w-6 h-6 text-red-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold mb-1">Oficinas Principales</div>
+                <p class="text-gray-700">Cra. 7 #32-16, Oficina 501</p>
+                <p class="text-gray-700">Chapinero, Bogotá D.C.</p>
+                <p class="text-gray-700">Colombia, C.P. 110231</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-red-100 p-3 rounded-lg flex-shrink-0">
+                <svg class="w-6 h-6 text-red-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1
+[8/06/2026 5:41 p. m.] Leon👑: 2 2z"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold mb-1">WhatsApp</div>
+                <p class="text-gray-700">+57 300 123 4567</p>
+                <p class="text-sm text-gray-600">Atención inmediata</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 bg-red-700 text-white p-6 rounded-lg">
+            <h4 class="font-semibold mb-3">¿Necesitas ayuda urgente?</h4>
+            <p class="mb-4 text-red-100">Nuestro equipo de soporte está disponible para resolver cualquier emergencia con tus envíos en Colombia.</p>
+            <button class="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg hover:bg-yellow-300 transition font-semibold">Chat en Vivo</button>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-yellow-500">
+          <h3 class="text-xl font-semibold mb-6">Envíanos un Mensaje</h3>
+          <form onsubmit="enviarFormulario(event)" class="space-y-4">
+            <div>
+              <label class="block mb-2 font-medium">Nombre Completo *</label>
+              <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600" />
+            </div>
+            <div>
+              <label class="block mb-2 font-medium">Correo Electrónico *</label>
+              <input type="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600" />
+            </div>
+            <div>
+              <label class="block mb-2 font-medium">Teléfono / Celular *</label>
+              <input type="tel" placeholder="+57 300 000 0000" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600" />
+            </div>
+            <div>
+              <label class="block mb-2 font-medium">Mensaje *</label>
+              <textarea rows="5" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-red-700 text-white py-3 rounded-lg hover:bg-red-800 transition font-semibold">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Preguntas Frecuentes</h2>
+      </div>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <details class="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <summary class="font-semibold cursor-pointer">¿Cuánto tiempo tarda la entrega en Colombia?</summary>
+          <p class="mt-3 text-gray-700">Los tiempos varían según el servicio y el destino: Express 24-48 horas en ciudades principales como Bogotá, Medellín, Cali y Barranquilla; Terrestre 3-7 días hábiles a nivel nacional.</p>
+        </details>
+        <details class="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <summary class="font-semibold cursor-pointer">¿Cómo puedo rastrear mi paquete?</summary>
+          <p class="mt-3 text-gray-700">Ingresa tu número de guía en la sección de rastreo de nuestra página. También puedes consultar el estado por WhatsApp al +57 300 123 4567.</p>
+        </details>
+        <details class="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <summary class="font-semibold cursor-pointer">¿Qué cubre el seguro de envío?</summary>
+          <p class="mt-3 text-gray-700">Todos los envíos incluyen seguro básico. Puedes contratar seguro adicional para paquetes de alto valor. Cubre pérdida, hurto y daños durante el transporte por todo el territorio colombiano.</p>
+        </details>
+        <details class="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <summary class="font-semibold cursor-pointer">¿Llegan a municipios y zonas rurales?</summary>
+          <p class="mt-3 text-gray-700">Sí, tenemos cobertura en más de 1.100 municipios de
+[8/06/2026 5:41 p. m.] Leon👑: Colombia. Para zonas de difícil acceso en departamentos como Amazonas, Vaupés o Guainía, los tiempos de entrega pueden extenderse.</p>
+        </details>
+        <details class="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <summary class="font-semibold cursor-pointer">¿Emiten factura electrónica con NIT?</summary>
+          <p class="mt-3 text-gray-700">Sí, emitimos factura electrónica que cumple con los requisitos de la DIAN. Para clientes empresariales, la facturación puede ser mensual. Contáctanos para configurar tu cuenta empresarial.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            <span class="font-bold text-xl text-yellow-400">EnvíaCol</span>
+          </div>
+          <p class="text-gray-400">Tu socio confiable en paquetería y logística en Colombia desde 2015. 🇨🇴</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-4 text-yellow-400">Servicios</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#servicios" class="hover:text-white transition">Paquetería Express</a></li>
+            <li><a href="#servicios" class="hover:text-white transition">Paquetería Terrestre</a></li>
+            <li><a href="#servicios" class="hover:text-white transition">Soluciones Empresariales</a></li>
+            <li><a href="#rastreo" class="hover:text-white transition">Rastreo de Paquetes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-4 text-yellow-400">Empresa</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#inicio" class="hover:text-white transition">Acerca de Nosotros</a></li>
+            <li><a href="#cobertura" class="hover:text-white transition">Cobertura Nacional</a></li>
+            <li><a href="#contacto" class="hover:text-white transition">Sucursales</a></li>
+            <li><a href="#contacto" class="hover:text-white transition">Trabaja con Nosotros</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-4 text-yellow-400">Legal</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Términos y Condiciones</a></li>
+            <li><a href="#" class="hover:text-white transition">Política de Privacidad</a></li>
+            <li><a href="#" class="hover:text-white transition">Política de Envíos</a></li>
+            <li><a href="#" class="hover:text-white transition">Habeas Data</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-400 text-sm">© 2026 EnvíaCol S.A.S. Todos los derechos reservados. NIT: 900.123.456-7 — Bogotá, Colombia</p>
+        <div class="flex gap-4">
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition">Facebook</a>
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition">Instagram</a>
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition">LinkedIn</a>
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function rastrear(e) {
+      e.preventDefault();
+      var guia = document.getElementById('guia').value;
+      alert('Rastreando paquete: ' + guia);
+    }
+    function enviarFormulario(e) {
+      e.preventDefault();
+      alert('¡Gracias por contactarnos! Te responderemos pronto.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
